@@ -9,6 +9,8 @@
 /* цвет фона кнопки героя 188CE8; */
 /* цвет линии под карточкой портфолио #EEEEEE */
 /* цвет линии хейдера #ECECEC */
+/*цвет фона героя #c4c4c4*;/
+/* цвет затемнения rgba(47, 48, 58, 0.4); */
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -17,6 +19,8 @@
   --primary-white-color: #ffffff;
   --bg-color: #f5f4fa;
   --footer-bg-color: #2f303a;
+  --hero-bg-color: #c4c4c4;
+  --hero-bg-image: rgba(47, 48, 58, 0.4);
   --logo-text-color: #000000;
   --button-bg-color: #188ce8;
   --border-color: #eeeeee;
@@ -147,9 +151,18 @@ img {
 
 /* hero */
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 200px 0;
+  background-color: var(--hero-bg-color);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
 
-  background-color: var(--footer-bg-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   text-align: center;
 }
@@ -254,9 +267,17 @@ img {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  .container-social .list {
+    display: flex;
+  }
 }
 
 /* address*/
+.footer .container {
+  display: flex;
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -264,7 +285,10 @@ img {
 }
 
 .address {
+  margin-top: 20px;
+
   color: var(--primary-white-color);
+
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -274,10 +298,6 @@ img {
 
 .footer .logo {
   color: var(--primary-white-color);
-}
-
-.address {
-  margin-top: 20px;
 }
 
 .address .link {
@@ -293,6 +313,20 @@ img {
 .link.mail {
   margin-top: 9px;
   margin-bottom: 9px;
+}
+
+.container-social {
+  display: flex;
+  padding-top: 12px;
+  margin-left: 70px;
+}
+.container-social .text {
+  color: var(--primary-white-color);
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 /* buttons */
