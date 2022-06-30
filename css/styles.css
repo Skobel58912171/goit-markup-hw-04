@@ -223,24 +223,6 @@ img {
   margin-right: 30px;
 }
 
-.social.list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 16px 32px 30px;
-}
-.social .item {
-  width: 44px;
-  height: 44px;
-  margin-right: 10px;
-}
-
-.social .item:last-child {
-  margin-right: 0px;
-}
-
-.icon .feature {
-  fill: #afb1b8;
-}
 .item:last-child,
 .work .item:last-child,
 .team .item:last-child {
@@ -270,7 +252,11 @@ img {
 }
 
 .team-title {
-  padding: 30px 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background: var(--primary-white-color);
+
   text-align: center;
 }
 .team .title {
@@ -289,10 +275,31 @@ img {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
 
-  .social .list {
-    display: flex;
-  }
+.social.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+  margin-right: 32px;
+  margin-left: 32px;
+}
+.social .item {
+  padding: 0;
+  border: none;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.social .item:last-child {
+  margin-right: 0px;
+}
+
+.team .icon {
+  fill: #afb1b8;
 }
 
 /* address*/
