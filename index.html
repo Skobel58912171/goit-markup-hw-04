@@ -27,11 +27,29 @@
             <li class="item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="contacts list">
+        <ul class="contacts list first">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="link first icon">
+              <svg class="icon-mail">
+                <use
+                  width="16"
+                  height="12"
+                  href="./images/symbol-defs.svg#icon-envelope"
+                ></use></svg
+              ><span class="mail">info@devstudio.com</span></a
+            >
           </li>
-          <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+          <li class="item second">
+            <a href="tel:+380961111111" class="link icon">
+              <svg class="icon-phone">
+                <use
+                  width="10"
+                  height="16"
+                  href="./images/symbol-defs.svg#icon-smartphone"
+                ></use></svg
+              ><span class="phone">+38 096 111 11 11</span></a
+            >
+          </li>
         </ul>
       </div>
     </header>
@@ -50,7 +68,7 @@
           <h2 class="visually-hidden">Наше преимущество</h2>
           <ul class="feature list">
             <li class="item">
-              <div class="container-feature">
+              <div class="container-feature current">
                 <svg>
                   <use width="70" height="70" href="./images/symbol-defs.svg#icon-antenna"></use>
                 </svg>
@@ -61,7 +79,7 @@
               </p>
             </li>
             <li class="item">
-              <div>
+              <div class="container-feature">
                 <svg>
                   <use width="70" height="70" href="./images/symbol-defs.svg#icon-clock"></use>
                 </svg>
@@ -72,7 +90,7 @@
               </p>
             </li>
             <li class="item">
-              <div>
+              <div class="container-feature">
                 <svg>
                   <use width="70" height="70" href="./images/symbol-defs.svg#icon-diagram"></use>
                 </svg>
@@ -83,7 +101,7 @@
               </p>
             </li>
             <li class="item">
-              <div>
+              <div class="container-feature">
                 <svg>
                   <use width="70" height="70" href="./images/symbol-defs.svg#icon-astronaut"></use>
                 </svg>
@@ -125,7 +143,7 @@
                 <p lang="en" class="text">Product Designer</p>
                 <ul class="social list">
                   <li class="item">
-                    <a href="">
+                    <a class="link" href="">
                       <svg class="icon">
                         <use
                           width="20"
@@ -159,9 +177,8 @@
                   </li>
                   <li class="item">
                     <a href="">
-                      <svg>
+                      <svg class="icon">
                         <use
-                          class="icon"
                           width="20"
                           height="20"
                           href="./images/symbol-defs.svg#icon-linkedin"
@@ -185,7 +202,7 @@
                 <ul class="social list">
                   <li class="item">
                     <a href="">
-                      <svg>
+                      <svg class="icon">
                         <use
                           width="20"
                           height="20"
@@ -195,7 +212,7 @@
                     </a>
                   </li>
                   <li class="item">
-                    <svg>
+                    <svg class="icon">
                       <use
                         width="20"
                         height="20"
@@ -205,7 +222,7 @@
                   </li>
                   <li class="item">
                     <a href="">
-                      <svg>
+                      <svg class="icon">
                         <use
                           width="20"
                           height="20"
@@ -216,7 +233,7 @@
                   </li>
                   <li class="item">
                     <a href="">
-                      <svg>
+                      <svg class="icon">
                         <use
                           width="20"
                           height="20"
@@ -241,7 +258,7 @@
                 <ul class="social list">
                   <li class="item">
                     <a href="">
-                      <svg>
+                      <svg class="icon">
                         <use
                           width="20"
                           height="20"
@@ -252,7 +269,7 @@
                   </li>
                   <li class="item">
                     <a href="">
-                      <svg>
+                      <svg class="icon">
                         <use
                           width="20"
                           height="20"
@@ -263,7 +280,7 @@
                   </li>
                   <li class="item">
                     <a href="">
-                      <svg>
+                      <svg class="icon">
                         <use
                           width="20"
                           height="20"
@@ -274,7 +291,7 @@
                   </li>
                   <li class="item">
                     <a href="">
-                      <svg>
+                      <svg class="icon">
                         <use
                           width="20"
                           height="20"
@@ -294,7 +311,7 @@
                 <ul class="social list">
                   <li class="item">
                     <a class="link" href="">
-                      <svg>
+                      <svg class="icon">
                         <use
                           width="20"
                           height="20"
@@ -305,7 +322,7 @@
                   </li>
                   <li class="item">
                     <a class="link" href="">
-                      <svg>
+                      <svg class="icon">
                         <use
                           width="20"
                           height="20"
@@ -316,7 +333,7 @@
                   </li>
                   <li class="item">
                     <a class="link" href="">
-                      <svg>
+                      <svg class="icon">
                         <use
                           width="20"
                           height="20"
@@ -327,7 +344,7 @@
                   </li>
                   <li class="item">
                     <a class="link" href="">
-                      <svg>
+                      <svg class="icon">
                         <use
                           width="20"
                           height="20"
@@ -342,48 +359,48 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section client">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="client list">
             <li class="item">
               <a href="">
-                <svg>
+                <svg class="icon">
                   <use width="106" height="60" href="./images/symbol-defs.svg#icon-logo1"></use>
                 </svg>
               </a>
             </li>
             <li class="item">
               <a href="">
-                <svg>
+                <svg class="icon">
                   <use width="106" height="60" href="./images/symbol-defs.svg#icon-logo2"></use>
                 </svg>
               </a>
             </li>
             <li class="item">
               <a class="link" href="">
-                <svg>
+                <svg class="icon">
                   <use width="106" height="60" href="./images/symbol-defs.svg#icon-logo3"></use>
                 </svg>
               </a>
             </li>
             <li class="item">
               <a href="">
-                <svg>
+                <svg class="icon">
                   <use width="106" height="60" href="./images/symbol-defs.svg#icon-logo4"></use>
                 </svg>
               </a>
             </li>
             <li class="item">
               <a href="">
-                <svg>
+                <svg class="icon">
                   <use width="106" height="60" href="./images/symbol-defs.svg#icon-logo5"></use>
                 </svg>
               </a>
             </li>
             <li class="item">
               <a href="">
-                <svg>
+                <svg class="icon">
                   <use width="106" height="60" href="./images/symbol-defs.svg#icon-logo6"></use>
                 </svg>
               </a>
@@ -395,7 +412,7 @@
     <footer class="footer">
       <div class="container">
         <div class="container-adress">
-          <a href="" lang="en" class="logo"><span>Web</span>Studio</a>
+          <a href="" lang="en" class="logo link"><span>Web</span>Studio</a>
           <address class="address">
             г. Киев, пр-т Леси Украинки, 26
             <a href="mailto:info@devstudio.com" class="link mail">info@devstudio.com</a>
@@ -407,28 +424,28 @@
           <ul class="social list">
             <li class="item">
               <a href="">
-                <svg>
+                <svg class="icon">
                   <use width="20" height="20" href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="item">
               <a href="">
-                <svg>
+                <svg class="icon">
                   <use width="20" height="20" href="./images/symbol-defs.svg#icon-twitter1"></use>
                 </svg>
               </a>
             </li>
             <li class="item">
               <a href="">
-                <svg>
+                <svg class="icon">
                   <use width="20" height="20" href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="item">
               <a href="">
-                <svg>
+                <svg class="icon">
                   <use width="20" height="20" href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
